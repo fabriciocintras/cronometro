@@ -19,11 +19,11 @@ import {
         <View style ={estilo1.areaBotoes}>
 
           <TouchableOpacity style={estilo1.botoes}>
-            <Text>Zerar</Text>
+            <Text>ZERAR</Text>
           </TouchableOpacity>
 
           <TouchableOpacity style={estilo1.botoes}>
-            <Text>Vai!</Text>
+            <Text>VAI</Text>
           </TouchableOpacity>
 
         </View>
