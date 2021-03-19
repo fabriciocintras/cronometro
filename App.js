@@ -1,54 +1,14 @@
 import React, {Component} from "react";
-import { 
-  View,
-  Text, 
-  StyleSheet, 
-  Image, TouchableOpacity
-} from "react-native";
-
+import Cronometro from './src/components/Cronometro/Cronometro';
+import Chat from './src/components/Chat/Chat';
  class App extends Component {
   render(){
     return(
-      <View style={estilo1.alinharTexto}>
-        <Image 
-          style={{width:120, height:120}}
-          source={require('./src/imagens/cronometropng.png')}
-        />
-        <Text >Ola Mundo!</Text>
-
-        <View style ={estilo1.areaBotoes}>
-
-          <TouchableOpacity style={estilo1.botoes}>
-            <Text>ZERAR</Text>
-          </TouchableOpacity>
-
-          <TouchableOpacity style={estilo1.botoes}>
-            <Text>VAI</Text>
-          </TouchableOpacity>
-
-        </View>
-
-      </View> 
+      <Cronometro></Cronometro>
+         
     )
   }
 }
 
-const estilo1 = StyleSheet.create({
-  alinharTexto:{
-    alignItems: "center",
-    justifyContent:"center",
-    flex:1
-  },
-  botoes:{
-    alignItems:'center',
-    justifyContent:'center',
-    backgroundColor:'seagreen',
-    height:40,
-    margin:15,
-    flex:1
-  },
-  areaBotoes:{
-    flexDirection: 'row'
-  }
-})
+
 export default App;
